@@ -21,17 +21,24 @@ public class Humain {
 		this.parler("Mmm, un bon verre de " + this.boisson + " ! GLOUPS !");
 	}
 	
-	private getArgent() {
+	private int getArgent() {
 		return this.argent;
 
 	}
 	
-	private getBoisson() {
+	private String getBoisson() {
 		return this.boisson;
 
 	}
-	private getNom() {
+	private String getNom() {
 		return this.nom;
 	}
 	
+	private void gagnerArgent(int n) {
+		this.argent+=n; 
+	}
+	private void perdreArgent(int n) {
+		this.argent-=n;
+	}
 }
+
